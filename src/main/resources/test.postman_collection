@@ -1,0 +1,92 @@
+{
+	"info": {
+		"_postman_id": "9ae57115-dbbd-412c-a88f-abb1774de831",
+		"name": "adq",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/endpoint/delete/3",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n\r\n        \"date\": \"2012-09-16\",\r\n        \"firstName\": \"Canada\",\r\n        \"lastName\": \"Canada\",\r\n        \"phoneNumber\": 11223344\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/endpoint/select",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endpoint",
+						"select"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/endpoint/delete/1",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/endpoint/delete/4",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endpoint",
+						"delete",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/endpoint/insert",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n\r\n        \"date\": \"2012-09-16\",\r\n        \"firstName\": \"Canada\",\r\n        \"lastName\": \"Canada\",\r\n        \"phoneNumber\": 11223344\r\n    }"
+				},
+				"url": {
+					"raw": "localhost:8080/endpoint/insert",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"endpoint",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
